@@ -8,7 +8,7 @@ public class NeProtocolEpon implements NeProtocol {
 
     @Override
     public void login() {
-
+        System.out.println("login");
     }
 
     @Override

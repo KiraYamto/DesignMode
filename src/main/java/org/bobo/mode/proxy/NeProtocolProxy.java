@@ -23,6 +23,8 @@ public class NeProtocolProxy implements NeProtocol {
         result = this.neProtocol.send();
         int i = 0;
         while(i < 3 &&!result){
+            i++;
+            System.out.println("retry "+i +"time");
             result = this.neProtocol.send();
         }
         return result;
